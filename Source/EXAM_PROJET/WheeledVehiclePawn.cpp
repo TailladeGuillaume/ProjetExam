@@ -11,6 +11,9 @@
 static const FName NAME_SteerInput("Steer");
 static const FName NAME_ThrottleInput("Throttle");
 
+static const FName NAME_SteerInput_Air("SteerAir");
+static const FName NAME_ThrottleInput_Air("ThrottleAir");
+
 AWheeledVehiclePawn::AWheeledVehiclePawn()
 {
     UWheeledVehicleMovementComponent4W* Vehicle4W = CastChecked<UWheeledVehicleMovementComponent4W>(GetVehicleMovement());
@@ -67,6 +70,9 @@ void AWheeledVehiclePawn::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
     PlayerInputComponent->BindAxis(NAME_ThrottleInput, this, &AWheeledVehiclePawn::ApplyThrottle);
     PlayerInputComponent->BindAxis(NAME_SteerInput, this, &AWheeledVehiclePawn::ApplySteering);
+
+    PlayerInputComponent->BindAxis(NAME_ThrottleInput_Air);
+    PlayerInputComponent->BindAxis(NAME_SteerInput_Air);
     
     PlayerInputComponent->BindAxis("MouseLookUpRate", this, &AWheeledVehiclePawn::LookUp);
     PlayerInputComponent->BindAxis("MouseTurnRate", this, &AWheeledVehiclePawn::Turn);
@@ -135,16 +141,18 @@ void AWheeledVehiclePawn::UpdateInAirControl(float DeltaTime)
         //Only allow in-air movement if we are not on the ground, or are in the air
         if(bInAir || bNotGrounded)
         {
-            const float ForwardInput = InputComponent->GetAxisValue(NAME_ThrottleInput);
-            const float RightInput = InputComponent->GetAxisValue(NAME_SteerInput);
+            const float ForwardInput = InputComponent->GetAxisValue(NAME_ThrottleInput_Air);
+            const float RightInput = InputComponent->GetAxisValue(NAME_SteerInput_Air);
+
+            UE_LOG(LogTemp, Warning, TEXT("ForwardInput : %f / RightInput : %f"), ForwardInput, RightInput);
 
             //In car is grounded allow player to roll the car over
             const float AirMovementForcePitch = 3.0f;
-            const float AirMovementForceRoll = !bInAir && bNotGrounded ? 20.0f : 3.0f;
+            const float AirMovementForceRoll = !bInAir && bNotGrounded ? 10.0f : 3.0f;
 
             if(UPrimitiveComponent* VehicleMesh = Vehicle4W->UpdatedPrimitive)
             {
-                const FVector MovementVector = FVector(RightInput * -AirMovementForceRoll, ForwardInput * AirMovementForcePitch, 0.0f) * DeltaTime * 200.0f;
+                const FVector MovementVector = FVector(RightInput * -AirMovementForceRoll, ForwardInput * AirMovementForcePitch, 0.0f) * DeltaTime * 150.0f;
                 const FVector NewAngularMovement = GetActorRotation().RotateVector(MovementVector);
 
                 VehicleMesh->SetPhysicsAngularVelocity(NewAngularMovement, true);
