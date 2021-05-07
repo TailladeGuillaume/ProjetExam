@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="459682c2-de54-420f-91ba-531c915b277d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AC_IK_Feet.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AC_IK_Feet.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/ThirdPersonShooter/BP_ThirdPersonPlayer.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EXAM_PROJET/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EXAM_PROJET/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EXAM_PROJET/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EXAM_PROJET/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Character_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Character_Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Vehicles/BP_WheeledVehiclePawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Vehicles/BP_WheeledVehiclePawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Vehicles/BP_WheeledVehiclePawn_SportsCar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Vehicles/BP_WheeledVehiclePawn_SportsCar.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/ParagonWraith/FX/Materials/Water/M_WaterMist.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/ParagonWraith/FX/Materials/Water/M_WaterMist.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/ParagonWraith/Characters/Heroes/Wraith/Animations/Jog_Fwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/ParagonWraith/Characters/Heroes/Wraith/Animations/Jog_Fwd.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/LevelSandbox.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/LevelSandbox.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TheLab.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TheLab.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TheLab_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TheLab_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/M_GlassMaterial.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/M_GlassMaterial.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/M_GlassMaterial_Inst_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/M_GlassMaterial_Inst_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/SoulCity/Maps/LV_Soul_Slum.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/SoulCity/Maps/SLV_Soul_Slum_Collision.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/SoulCity/Maps/SLV_Soul_Slum_Collision.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Gold.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Gold.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Steel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Materials/M_Metal_Steel.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Widget_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/Widget_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXAM_PROJET.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EXAM_PROJET.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/EXAM_PROJET/EXAM_PROJETGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EXAM_PROJET/EXAM_PROJETGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UE4_Mannequin/Animations/UE4_Mannequin_AnimBlueprint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UE4_Mannequin/Animations/UE4_Mannequin_AnimBlueprint.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -169,6 +164,7 @@
       <updated>1620330171505</updated>
       <workItem from="1620330184219" duration="674000" />
       <workItem from="1620332780529" duration="777000" />
+      <workItem from="1620374352834" duration="613000" />
     </task>
     <servers />
   </component>
